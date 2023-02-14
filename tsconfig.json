@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "public/scripts",
+    "target": "ES2017",
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "allowJs": true
+  },
+  "include": ["src/**/*"]
+}

@@ -1,0 +1,5 @@
+"use strict";
+exports.__esModule = true;
+exports.baseUrl = void 0;
+exports.baseUrl = 'http://localhost:3030';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBYyxRQUFBLE9BQU8sR0FBRSx1QkFBdUIsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCAgYmFzZVVybCA9J2h0dHA6Ly9sb2NhbGhvc3Q6MzAzMCciXX0=
