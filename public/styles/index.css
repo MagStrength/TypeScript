@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+	background: #F2F2F2;
+	font-family: 'Lato', sans-serif;
+}
+.main-container {
+	background: #fff;
+	width: 980px;
+	margin: 0 auto;
+}
+.header {
+    border-bottom: 1px solid #828282;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+.header-container {
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+.avatar {
+    width: 55px;
+    height: 55px;
+}
+.info p {
+    margin: 0;
+}
+p.name {
+    font-style: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+.fav {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #4F4F4F;    
+    display: flex;
+    align-items: center;
+}
+.heart-icon {
+    background-image: url(../img/heart.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 16px;
+    width: 16px;
+    display: block;
+    margin-right: 4px;
+}
+.heart-icon.active {
+    background-image: url(../img/heart-filled.png);
+}
+.container {
+    margin-top: 36px;
+    position: relative;
+}
+.search-form {
+    background: rgba(0, 0, 0, 0.03);
+    margin: 0 16px;
+    padding: 24px 16px;
+}
+.search-filedset {
+    border: none;
+}
+input, select {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 1px 4px;
+}
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.row.text-right {
+    justify-content: flex-end;
+}
+.row + .row {
+    margin-top: 24px;
+}
+.row div {
+    width: 25%;
+    padding: 0 8px;
+}
+.providers {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.providers label {
+	display: flex;
+	align-items: center;
+}
+button {
+	background: #828282;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 84px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.results {
+    margin-top: 20px;
+} 
+.search-results-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 32px;
+}
+.search-results-header p {
+    font-size: 20px;
+}
+.icon-filter {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/filter.png) no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2px;
+}
+.search-results-filter span {
+    border-bottom: 1px dashed #828282;
+    margin-right: 4px;
+} 
+.search-results-filter select {
+    width: 180px;
+}
+ul.results-list {
+    list-style: none;
+    margin: 0 16px;
+    padding: 0;
+}
+.result {
+    padding: 16px;
+}
+.result-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.result-img-container {
+    position: relative;
+    margin-right: 16px;
+}
+.result-img {
+    width: 245px;
+    height: auto;
+    margin-right: 16px;
+}
+.favorites {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background-image: url(../img/heart.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.favorites.active {
+    background-image: url(../img/heart-filled.png);
+}
+.result-info {
+    position: relative;
+}
+.result-info--header {
+    display: flex;
+    justify-content: space-between;
+}
+.result-info--header p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+p.price {
+    font-weight: 800;
+}
+.result-info--map {
+    background: url(../img/map-pin.png) no-repeat;
+    padding-left: 24px;
+    font-size: 12px;
+    color: #828282;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.result-info--descr {
+    color: #4F4F4F;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+.result-info--footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+/*    position: absolute;
+    width: 100%;
+    bottom: 0;*/
+}
+.result-info--footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.result-info--footer p:first-child {
+    margin-bottom: 4px;
+}
+p.dashed {
+    border-bottom: 1px dashed #4F4F4F;
+    color: #4F4F4F;
+    background: url(../img/chevron-down.png) no-repeat scroll 100%;
+    padding-right: 24px;
+    cursor: pointer;
+}
+.month {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.month span {
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10px;
+    height: 16px;
+    display: block;
+    cursor: pointer;
+}
+span.back {
+    background-image: url(../img/angle-left.png);
+}
+span.forward {
+    background-image: url(../img/angle-right.png);
+}
+.days {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    justify-content: flex-start;
+}
+.days div {
+    width: 35px;
+    padding: 8px 0;
+    text-align: center;
+    margin: 4px;
+    background: #E5E5E5;
+    font-size: 12px;
+}
+.days div.available {
+    background: #079704;
+    color: #fff;
+    cursor: pointer;
+}
+.days div.next-month {
+    color: #a0a0a0;
+    background: #f1f0f0;
+}
+.availability {
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+}
+.available-colour {
+    background: #099705;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.text-right {
+	text-align: right;
+}
+.before-results-block, .no-results-block {
+    margin: 72px auto;
+    padding: 24px;
+    text-align: center;
+    width: 350px;
+}
+.before-results-block img, .no-results-block img {
+    margin: 0 auto;
+    margin-bottom: 62px;
+    width: 181px;
+}
+.info-block {
+    width: 560px;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    background: rgb(255 255 255 / 90%);
+    padding: 24px 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.info-block.success {
+    border-bottom: 5px solid #079704;
+}
+.info-block.error {
+    border-bottom: 5px solid #D30000;
+}
+.info-block p {
+    margin-bottom: 16px;    
+}
